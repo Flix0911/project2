@@ -1,11 +1,11 @@
 # Seal Project 2
 
-- **Name: Erick Valencia **
-- **App Name: Record your Records **
-- **Description: Similar to Discogs, this will be a place to store your music collection **
-- **GitHub URL: https://github.com/Flix0911/project2 **
-- **Deployed Website: https://ev-seal-project2.onrender.com/ **
-- **Trello Board: https://trello.com/invite/b/TqJm5XOP/ATTIda72e9a32d509a18fe1429d671fe20b2935E0D42/project-2 **
+- **Name: Erick Valencia**
+- **App Name: Record your Records**
+- **Description: Similar to Discogs, this will be a place to store your music collection**
+- **GitHub URL: https://github.com/Flix0911/project2**
+- **Deployed Website: https://ev-seal-project2.onrender.com/**
+- **Trello Board: https://trello.com/invite/b/TqJm5XOP/ATTIda72e9a32d509a18fe1429d671fe20b2935E0D42/project-2**
 
 ## List of Dependencies
 
@@ -39,7 +39,7 @@
 | New        | /collection/new | GET  | Bring to new page |
 | Delete - owned    | /collection/owned  | DELETE | Delete and return to Index of owned |
 | Delete - wanted    | /collection/wanted  | DELETE | Delete and return to Index of wanted |
-| Update     | /collection/:id | PUT  | Update music ID and return to show page |
+| Update - owned/wanted   | /collection/:id | PUT  | Update music ID and return to show page |
 | Create     | /collection     | POST | Create the new music and return to index |
 | Edit       | /collection/:id | GET  | Bring user to edit page for specific id  |
 | Show       | /collection/:id | GET  | Bring user to certain ID and show all information | 
