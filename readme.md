@@ -1,7 +1,7 @@
 # Seal Project 2
 
 - **Name: Erick Valencia**
-- **App Name: Record your Records**
+- **App Name: Record your Music collection**
 - **Description: Similar to Discogs, this will be a place to store your music collection**
 - **GitHub URL: https://github.com/Flix0911/project2**
 - **Deployed Website: https://ev-seal-project2.onrender.com/**
@@ -106,4 +106,10 @@ const musicSchema = new Schema({
 
 
 
+#### Future improvements:
+- Authentication
+- Tracklist and tracklist button on new.ejs to click to add additional slots
 
+##### Daily tracker
+| Day  | What I did| 
+| 1/10 | Received approval 
