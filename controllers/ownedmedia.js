@@ -14,6 +14,10 @@ router.get("/", async (req, res) => {
 })
 
 //New - GET - Brings to the form to make a NEW ownedMedia
+router.get("/new", (req, res) => {
+    //Bring to new form
+    res.render("ownedmedia/new.ejs")
+})
 
 //Destroy - DELETE - Remove the ownedMedia that was clicked
 
