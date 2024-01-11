@@ -111,5 +111,14 @@ const musicSchema = new Schema({
 - Tracklist and tracklist button on new.ejs to click to add additional slots
 
 ##### Daily tracker
-| Day  | What I did| 
-| 1/10 | Received approval 
+
+| 1/10 - Below tasks accomplished| 
+| - Received approval |
+| - File structure built | 
+| - Index route for both Owned and Wanted functional just to check connection |
+| - CSS connected |
+| - All other files connected |
+| - Created seed file and connection.js to seed data |
+| - Updated ownedmedia to display said data (not handling logic of owned/wanted yet, just to prove it works) |
+
+

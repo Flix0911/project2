@@ -8,8 +8,9 @@ const Media = require("../models/Media")
 //Routes
 
 //Index - GET - Bring to index page of ownedMedia
-router.get("/", (req, res) => {
-    res.render("ownedmedia/index.ejs")
+router.get("/", async (req, res) => {
+    const medias = await Media.find({})
+    res.render("ownedmedia/index.ejs", {medias})
 })
 
 //New - GET - Brings to the form to make a NEW ownedMedia

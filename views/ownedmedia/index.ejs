@@ -8,5 +8,12 @@
 </head>
 <body>
     <h1>This is the index page for Owned Media</h1>
+
+        <% for(let i = 0; i < medias.length; i++) { %>
+
+            <li><%= medias[i].artist %> </li>
+
+
+       <% } %>
 </body>
 </html>
