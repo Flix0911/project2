@@ -24,7 +24,15 @@ router.get("/", async (req, res) => {
 //Edit - GET - Bring to edit.ejs from show.ejs
 
 //Show - GET - Bring to show.ejs from the ownedMedia Index
+router.get("/:id", async (req, res) => {
+    //find media by id
+    let foundMedia = await Media.findById(req.params.id)
+    //log the request
+    console.log(foundMedia)
+    //bring to show page
+    res.render("ownedmedia/show.ejs", {media: foundMedia})
 
+})
 
 //Export the router
 module.exports = router

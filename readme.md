@@ -104,7 +104,7 @@ const musicSchema = new Schema({
     countryOrigin: { type: String, required: true }
 });
 
-
+```
 
 #### Future improvements:
 - Authentication
@@ -112,13 +112,13 @@ const musicSchema = new Schema({
 
 ##### Daily tracker
 
-| 1/10 - Below tasks accomplished| 
-| - Received approval |
-| - File structure built | 
-| - Index route for both Owned and Wanted functional just to check connection |
-| - CSS connected |
-| - All other files connected |
-| - Created seed file and connection.js to seed data |
-| - Updated ownedmedia to display said data (not handling logic of owned/wanted yet, just to prove it works) |
+| 1/10 - Below tasks accomplished | 
+- Received approval
+- File structure built
+- Index route for both Owned and Wanted functional just to check connection
+- CSS connected
+- All other files connected
+- Created seed file and connection.js to seed data
+= Updated ownedmedia to display said data (not handling logic of owned/wanted yet, just to prove it works)
 
 

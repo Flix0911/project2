@@ -30,7 +30,7 @@ mongoose.connection.on("open", async () => {
                 artist: "Hall & Oates",
                 album: {
                   name: "Voices",
-                  img: "https://i.reddhttps://i.discogs.com/8Pgpm3v79zxHeaiesuC71943IaVMOH_UQFDPQNFrQ6M/rs:fit/g:sm/q:90/h:479/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MDU0/MjUtMTI4NzY5MjI2/MC5qcGVn.jpeg.it/ry3lgsr9mcv31.jpg",
+                  img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71Ig0mgLCtL._UF1000,1000_QL80_.jpg",
                   releaseDate: new Date("1980-07-29"),
                   recordLabel: "RCA Records",
                   genre: "Pop",
