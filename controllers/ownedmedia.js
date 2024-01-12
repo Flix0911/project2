@@ -45,8 +45,8 @@ router.post("/", async (req, res) => {
         // Keeping my code safe. default values if not present. logic of what === means and how it should appear when submitted. THIS WAS SO DIFFICULT
         req.body.album.owned = req.body.album.owned === "on";
         req.body.album.medium.cd = req.body.album.medium.cd === "on" ? true : false;
-req.body.album.medium.vinyl = req.body.album.medium.vinyl === "on" ? true : false;
-req.body.album.medium.cassette = req.body.album.medium.cassette === "on" ? true : false;
+        req.body.album.medium.vinyl = req.body.album.medium.vinyl === "on" ? true : false;
+        req.body.album.medium.cassette = req.body.album.medium.cassette === "on" ? true : false;
 
         
 

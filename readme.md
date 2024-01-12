@@ -125,5 +125,5 @@ const musicSchema = new Schema({
 - ownedmedia index.ejs is showing only the image now
 - New route is functional
 - New.ejs file with the form is up
-- Create route finally functional. This was a huge challenge and ended up being my problem for the day. I have nested data and nested nested data and that was causing me a lot of trouble for me. Then I needed to set default values and handle the logic of that. However, IT WORKS! This should save me later on in the project
+- Create route finally functional. This was a huge challenge and ended up being my problem for the day. I have nested data and nested nested data and that was causing me a lot of trouble for me. They're required booleans as well. Then I needed to set default values and handle the logic of that. However, IT WORKS! This should save me later on in the project
 
