@@ -7,20 +7,20 @@
 
     <form action="/owned" method="post">
         Artist: <input type="text" name="artist"><br>
-        Album Title: <input type="text" name="name"><br>
-        Album's Image: <input type="text" name="img"><br>
-        Album Release date: <input type="date" name="releaseDate"><br>
-        Album's Record Label: <input type="text" name="recordLabel"><br>
-        Album Genre: <input type="text" name="genre"><br>
-        Album Duration: <input type="number" name="duration"><br>
-        Your rating(1-5) <input type="number" name="rating"><br>
-        Language of Album: <input type="text" name="language"><br>
-        Do you own it?: <input type="checkbox" name="owned" value="true"><br>
-        Medium you own: 
-        <input type="checkbox" name="cd" value="true"><br> 
-        <input type="checkbox" name="vinyl" value="true"><br>   
-        <input type="checkbox" name="cassette" value="true"><br>    
-        Country of origin: <input type="text" name="countryOrigin"><br>
+        Album Title: <input type="text" name="album[name]"><br>
+        Album's Image: <input type="text" name="album.img"><br>
+        Album Release date: <input type="date" name="album.releaseDate"><br>
+        Album's Record Label: <input type="text" name="album.recordLabel"><br>
+        Album Genre: <input type="text" name="album.genre"><br>
+        Album Duration: <input type="number" name="album.duration"><br>
+        Your rating(1-5) <input type="number" name="album.rating"><br>
+        Language of Album: <input type="text" name="album.language"><br>
+        Do you own it(Click box for yes)?: <input type="checkbox" name="album.owned" value="true"><br>
+        Medium you own: <br>
+        CD(Click box for yes): <input type="checkbox" name="album.medium.cd" value="true"><br> 
+        Vinyl(Click box for yes): <input type="checkbox" name="album.medium.vinyl" value="true"><br>   
+        Cassette(Click box for yes): <input type="checkbox" name="album.medium.cassette" value="true"><br>    
+        Country of origin: <input type="text" name="album.countryOrigin"><br>
     <input type="submit" value="Mark your owned album">
 
 </body>

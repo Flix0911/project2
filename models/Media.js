@@ -21,7 +21,7 @@ const musicSchema = new mongoose.Schema({
             cassette: { type: Boolean, required: true }
         },
     },
-    countryOrigin: { type: String, required: true }
+    countryOrigin: { type: String, default: 'Unknown' }
 });
 
 //create vaariable to export
