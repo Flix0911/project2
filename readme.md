@@ -121,4 +121,9 @@ const musicSchema = new Schema({
 - Created seed file and connection.js to seed data
 = Updated ownedmedia to display said data (not handling logic of owned/wanted yet, just to prove it works)
 
+| 1/11 - Below tasks accomplished |
+- ownedmedia index.ejs is showing only the image now
+- New route is functional
+- New.ejs file with the form is up
+- Create route finally functional. This was a huge challenge and ended up being my problem for the day. I have nested data and nested nested data and that was causing me a lot of trouble for me. Then I needed to set default values and handle the logic of that. However, IT WORKS! This should save me later on in the project
 
