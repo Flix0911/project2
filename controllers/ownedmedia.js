@@ -22,6 +22,39 @@ router.get("/new", (req, res) => {
 //Destroy - DELETE - Remove the ownedMedia that was clicked
 
 //Update - PUT - Return updated ownedMedia to the ._id indicated
+router.put("/:id", async (req, res) => {
+    try {
+        //debugging on PUT request, no longer needed
+        console.log("Received PUT request:", req.body, req.params);
+
+        // destructuring checkbox values
+        const { 
+        "media.album.owned": owned, 
+        "media.album.medium.cd": cd, 
+        "media.album.medium.vinyl": vinyl, 
+        "media.album.medium.cassette": cassette 
+        } = req.body;
+
+        // Find by id and update the req.body
+        let updatedMedia = await Media.findByIdAndUpdate(
+            req.params.id,
+            { 
+            "album.owned": owned === 'on', 
+            "album.medium.cd": cd === 'on', 
+            "album.medium.vinyl": vinyl === 'on', 
+            "album.medium.cassette": cassette === 'on' 
+            },
+            { new: true }
+        );
+        
+        //log what has been updated
+        console.log("Updated media:", updatedMedia);
+        res.redirect(`/owned/${req.params.id}`);
+    } catch (error) {
+        console.error("Error handling PUT request:", error);
+        res.status(500).send("Internal Server Error");
+    }
+});
 
 //Create - POST - Return back to OwnedMedia index with an additional OwnedMedia
 router.post("/", async (req, res) => {

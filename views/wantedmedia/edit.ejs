@@ -5,8 +5,9 @@
 <body>
     <h1> welcome to edit page for your wanted media</h1>
 
-    <form action="/wanted/<%= media._id %>/?_method=PUT" method="post">
-        Owned(Click box for yes): <input type="checkbox" name="media.owned" <%= media.owned ? 'checked': '' %>><br>
+    <form action="/owned/<%= media._id %>/?_method=PUT" method="post">
+
+        Owned(Click box for yes): <input type="checkbox" name="media.album.owned" <%= media.album.owned ? 'checked': '' %>><br>
        
         CD(Click box for yes): <input type="checkbox" name="media.album.medium.cd" <%= media.album.medium.cd ? 'checked': '' %>><br>
         

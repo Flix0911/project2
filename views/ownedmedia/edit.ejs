@@ -5,16 +5,16 @@
 <body>
     <h1> welcome to edit page for owned media</h1>
 
-    <form action="/owned/<%= media._id %>/?_method=PUT" method="post">
-        Owned(Click box for yes): <input type="checkbox" name="media.owned" <%= media.owned ? 'checked': '' %>><br>
-       
+    <form action="/owned/<%= media._id %>?_method=PUT" method="POST">
+
+        Owned(Click box for yes): <input type="checkbox" name="media.album.owned" <%= media.album.owned ? 'checked': '' %>><br>
         CD(Click box for yes): <input type="checkbox" name="media.album.medium.cd" <%= media.album.medium.cd ? 'checked': '' %>><br>
-        
         Vinyl(Click box for yes): <input type="checkbox" name="media.album.medium.vinyl" <%= media.album.medium.vinyl ? 'checked': '' %>><br>
-        
         Cassette(Click box for yes): <input type="checkbox" name="media.album.medium.cassette" <%= media.album.medium.cassette ? 'checked': '' %>><br>
-    
+        
         <input type="submit" value="Update your Collection">
     </form>
+    
+    
 </body>
 </html>
