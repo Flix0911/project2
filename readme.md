@@ -127,3 +127,9 @@ const musicSchema = new Schema({
 - New.ejs file with the form is up
 - Create route finally functional. This was a huge challenge and ended up being my problem for the day. I have nested data and nested nested data and that was causing me a lot of trouble for me. They're required booleans as well. Then I needed to set default values and handle the logic of that. However, IT WORKS! This should save me later on in the project
 
+| 1/12 - Below tasks accomplished |
+- wantedmedia show, index, new, and create routes are functional
+- wantedmdia show.ejs, index.ejs, and new.ejs have been created
+- Decided to add those additional pages because of how I want the browser URL to change
+- Also created landing.ejs which has 2 options in it. One takes you to your owned media and the other to your wanted media
+- Purposely had an easier day because of 1/11's struggles

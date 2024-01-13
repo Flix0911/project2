@@ -62,6 +62,14 @@ router.post("/", async (req, res) => {
 });
 
 //Edit - GET - Bring to edit.ejs from show.ejs
+router.get("/edit/:id", async (req, res) => {
+    try {
+        let foundMedia = await Media.findById(req.params.id)
+        res.render("ownedmedia/edit.ejs", {media: foundMedia})
+    } catch (error) {
+        res.status(500).send("Internal Server Error");
+    }
+})
 
 //Show - GET - Bring to show.ejs from the ownedMedia Index
 router.get("/:id", async (req, res) => {

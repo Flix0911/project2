@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include("../partials/head.ejs") %>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+
 <body>
+    <h1> welcome to edit page for your wanted media</h1>
+
+    <form action="/wanted/<%= media._id %>/?_method=PUT" method="post">
+        Owned(Click box for yes): <input type="checkbox" name="media.owned" <%= media.owned ? 'checked': '' %>><br>
+       
+        CD(Click box for yes): <input type="checkbox" name="media.album.medium.cd" <%= media.album.medium.cd ? 'checked': '' %>><br>
+        
+        Vinyl(Click box for yes): <input type="checkbox" name="media.album.medium.vinyl" <%= media.album.medium.vinyl ? 'checked': '' %>><br>
+        
+        Cassette(Click box for yes): <input type="checkbox" name="media.album.medium.cassette" <%= media.album.medium.cassette ? 'checked': '' %>><br>
     
+        <input type="submit" value="Update your Collection">
+    </form>
 </body>
 </html>
