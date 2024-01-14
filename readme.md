@@ -133,3 +133,17 @@ const musicSchema = new Schema({
 - Decided to add those additional pages because of how I want the browser URL to change
 - Also created landing.ejs which has 2 options in it. One takes you to your owned media and the other to your wanted media
 - Purposely had an easier day because of 1/11's struggles
+
+| 1/13 - Below tasks accomplished |
+- Edit and Update route for ownedMedia are now functional
+- Edit.ejs for both ownedmedia and wanted media have been created
+- Update route did cause trouble like expected. Working with nested data has been a tough hurdle but it makes a lot more sense than it did prior to this. I'm glad I chose the schema that I did
+- Reinforce/practice destructuring for the the update route!
+- Delete route was added, and it DESTROYED
+- Full CRUD for ownedMedia was accomplished
+
+| 1/14 - Below task accomplished |
+- Edit, Update, and Delete routes for wantedMedia were completed. This was simple copy/paste. It's handlded separately purely for how you would walk through the application
+- Layouts of all ejs pages are now more inline with what is going on, not the skeleton that they were previously
+- Logic for index route to display only owned or wanted has been completed
+- 
