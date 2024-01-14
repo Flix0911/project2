@@ -9,8 +9,10 @@ const Media = require("../models/Media")
 
 //Index - GET - Bring to index page of ownedMedia
 router.get("/", async (req, res) => {
-    const medias = await Media.find({})
-    res.render("ownedmedia/index.ejs", {medias})
+    //find albums that are owned
+    const ownedMedia = await Media.find({ 'album.owned': true })
+    //display the owned albums
+    res.render("ownedmedia/index.ejs", { medias: ownedMedia })
 })
 
 //New - GET - Brings to the form to make a NEW ownedMedia
