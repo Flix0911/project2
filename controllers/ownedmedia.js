@@ -20,6 +20,17 @@ router.get("/new", (req, res) => {
 })
 
 //Destroy - DELETE - Remove the ownedMedia that was clicked
+router.delete("/:id", async (req, res) => {
+    try {
+        let deletedMedia = await Media.findByIdAndDelete(req.params.id)
+        //check console.log
+        console.log(deletedMedia)
+        res.redirect("ownedmedia/index.ejs")
+    } catch (error) {
+        console.error(err);
+        res.status(500).send("Internal Server Error");
+    }
+})
 
 //Update - PUT - Return updated ownedMedia to the ._id indicated
 router.put("/:id", async (req, res) => {
@@ -51,7 +62,7 @@ router.put("/:id", async (req, res) => {
         console.log("Updated media:", updatedMedia);
         res.redirect(`/owned/${req.params.id}`);
     } catch (error) {
-        console.error("Error handling PUT request:", error);
+        console.error(err);
         res.status(500).send("Internal Server Error");
     }
 });

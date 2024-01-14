@@ -34,6 +34,8 @@
 
         </ul>
     </ul>
-    <a href="/owned/edit/<%= media._id %>">Update your collection</a>
+    <a href="/owned/edit/<%= media._id %>">Update your collection
+        <form action="/owned/<%= media._id %>?_method=DELETE" method="POST">
+            <button>DELETE</button>
 </body>
 </html>
