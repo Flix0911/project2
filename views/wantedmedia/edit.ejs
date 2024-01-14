@@ -3,7 +3,14 @@
     <%- include("../partials/head.ejs") %>
 
 <body>
-    <h1> welcome to edit page for your wanted media</h1>
+    <%- include("../partials/nav.ejs") %>
+
+    <h1>Edit page for... "<%= media.artist %> - <%= media.album.name %>" </h1>
+    <h2>This is currently under your Wanted Collection. Has anything changed?</h2>
+
+    <h3>Instructions...</3>
+    <ul>Note: Checkbox means - "Yes, I own it" <span>&#10003;</span></ul>
+
 
     <form action="/owned/<%= media._id %>/?_method=PUT" method="post">
 

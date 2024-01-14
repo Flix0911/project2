@@ -3,9 +3,10 @@
     <%- include("../partials/head.ejs") %>
 
 <body>
-    <h1> Your owned Music collection</h1>
+    <%- include("../partials/nav.ejs") %>
+
+    <h1>Details on "<%= media.album.name %>" By: "<%= media.artist %>"</h1>
     <ul>
-        <li>Band: <%= media.artist %></li>
         <ul>
             <li><img src="<%= media.album.img %>"></li>
             <li>Title:<%= media.album.name %></li>
@@ -37,5 +38,8 @@
     <a href="/owned/edit/<%= media._id %>">Update your collection
         <form action="/owned/<%= media._id %>?_method=DELETE" method="POST">
             <button>DELETE</button>
+
+            <%- include("../partials/footer.ejs") %>
+
 </body>
 </html>

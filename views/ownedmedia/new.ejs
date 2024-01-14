@@ -3,6 +3,8 @@
     <%- include("../partials/head.ejs") %>
 
 <body>
+    <%- include("../partials/nav.ejs") %>
+
     <h1>Add to either your Owned Colleciton</h1>
 
     <form action="/owned" method="post">
@@ -21,7 +23,7 @@
         Vinyl(Click box for yes): <input type="checkbox" name="album.medium.vinyl" value="true"><br>   
         Cassette(Click box for yes): <input type="checkbox" name="album.medium.cassette" value="true"><br>    
         Country of origin: <input type="text" name="album.countryOrigin"><br>
-    <input type="submit" value="Mark your owned album">
+    <input type="submit" value="Add your owned Album">
 
 </body>
 </html>
