@@ -25,7 +25,7 @@ router.delete("/:id", async (req, res) => {
         let deletedMedia = await Media.findByIdAndDelete(req.params.id)
         //check console.log
         console.log(deletedMedia)
-        res.redirect("ownedmedia/index.ejs")
+        res.redirect("/owned")
     } catch (error) {
         console.error(err);
         res.status(500).send("Internal Server Error");
@@ -114,6 +114,7 @@ router.get("/edit/:id", async (req, res) => {
         res.status(500).send("Internal Server Error");
     }
 })
+
 
 //Show - GET - Bring to show.ejs from the ownedMedia Index
 router.get("/:id", async (req, res) => {
