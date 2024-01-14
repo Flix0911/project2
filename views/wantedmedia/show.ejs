@@ -16,7 +16,7 @@
             <li>Duration(Minutes): <%= media.album.duration %></li>
             <li>Your Rating (1-5): <%= media.album.rating %></li>
             <li>Language: <%= media.album.language %></li>
-            <li>Country of Origin: <%= media.album.countryOrigin %></li>
+            <li>Country of Origin: <%= media.countryOrigin %></li>
 
             <li>Owned: <%= media.album.owned ? "Up on the Shelves" : "On the wanted list" %></li>
             <ul>
@@ -36,7 +36,9 @@
         </ul>
     </ul>
     
-    <a href="/owned/edit/<%= media._id %>">Update your collection</a>
+    <a href="/wanted/edit/<%= media._id %>">Update your collection</a>
+    <form action="/wanted/<%= media._id %>?_method=DELETE" method="POST">
+        <button>DELETE</button>
     
     <%- include("../partials/footer.ejs") %>
 

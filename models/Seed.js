@@ -230,7 +230,7 @@ mongoose.connection.on("open", async () => {
                 artist: "Kim Wan-sun",
                 album: {
                   name: "Alone in Front of the Yard",
-                  img: "https://cdn2.albumoftheyear.org/375x/album/641148-kim-wan-sun_1936.jpg",
+                  img: "https://e.snmc.io/i/1200/s/c595ad2b6529b68c69b81182593e78d1/3344011",
                   releaseDate: ("1987-05-07"),
                   recordLabel: "Unknown",
                   genre: "Pop",

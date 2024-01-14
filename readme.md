@@ -146,4 +146,5 @@ const musicSchema = new Schema({
 - Edit, Update, and Delete routes for wantedMedia were completed. This was simple copy/paste. It's handlded separately purely for how you would walk through the application
 - Layouts of all ejs pages are now more inline with what is going on, not the skeleton that they were previously
 - Logic for index route to display only owned or wanted has been completed
-- 
+- Added more seed data to help visualize
+- Hamburger bar for index.ejs of both owned/wanted have desired links, no info yet

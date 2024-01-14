@@ -6,6 +6,7 @@
     <%- include("../partials/nav.ejs") %>
 
     <h1>Details on "<%= media.album.name %>" By: "<%= media.artist %>"</h1>
+
     <ul>
         <ul>
             <li><img src="<%= media.album.img %>"></li>
@@ -16,7 +17,7 @@
             <li>Duration(Minutes): <%= media.album.duration %></li>
             <li>Your Rating (1-5): <%= media.album.rating %></li>
             <li>Language: <%= media.album.language %></li>
-            <li>Country of Origin: <%= media.album.countryOrigin %></li>
+            <li>Country of Origin: <%= media.countryOrigin %></li>
 
             <li>Owned: <%= media.album.owned ? "Up on the Shelves" : "On the wanted list" %></li>
             <ul>

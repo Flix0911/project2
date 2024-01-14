@@ -3,8 +3,17 @@
     <%- include("../partials/head.ejs") %>
 
 <body>
-    <%- include("../partials/nav.ejs") %>
     <h1>This is the index page for Owned Media</h1>
+
+    <div>
+        <% const randomIndex = Math.floor(Math.random() * medias.length) %>
+        <a href="/owned/<%= medias[randomIndex]._id %>">Random Owned Album</a>
+        <a href="/owned/new">Add a newly acquired album</a>
+        <a href="/wanted/new">Add a wanted album</a>
+        <a href="/wanted">Go to Wanted Albums</a>
+        <a href="/home">Return Home</a>
+       
+    </div>
 
     <ul>
         <% for(let i = 0; i < medias.length; i++) { %>
@@ -17,7 +26,6 @@
         <% } %>
     </ul>
 
-    <%- include("../partials/footer.ejs") %>
 
 </body>
 </html>
