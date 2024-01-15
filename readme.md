@@ -142,9 +142,15 @@ const musicSchema = new Schema({
 - Delete route was added, and it DESTROYED
 - Full CRUD for ownedMedia was accomplished
 
-| 1/14 - Below task accomplished |
+| 1/14 - Below tasks accomplished |
 - Edit, Update, and Delete routes for wantedMedia were completed. This was simple copy/paste. It's handlded separately purely for how you would walk through the application
 - Layouts of all ejs pages are now more inline with what is going on, not the skeleton that they were previously
 - Logic for index route to display only owned or wanted has been completed
 - Added more seed data to help visualize
 - Hamburger bar for index.ejs of both owned/wanted have desired links, no info yet
+
+| 1/15 - Below tasks accomplished |
+- Styling of Edit and Show ejs pages for both owned/wanted media was worked on. The general layout is there, especially on the edit page. Show page feels very bland
+- On that note though, no color or color palette has been added to anything yet, minus checkboxes, which I doubt is permanent. Once the layout of all the pages are correct, that's when I'll come in and start adding colors to it all. I'm not really sure what it should be though, black, white, red, gold, silver, that seems to be my initial thoughts. Black and silver are common for vinyl and CDs, red seems to be a common color of tracklists on records, black is the norm for cassettes (though they do color them). Gold just seems appropriate for some reason. That is not today's task though
+- Tried making a hamburger toggle and it went horribly. I think my index page will be changed to the below, noted updated index
+![Desktop Index UPDATE](https://i.imgur.com/497u4st.jpg)

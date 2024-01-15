@@ -163,7 +163,7 @@ input[type=checkbox] {
   }
 
 /* INPUT SUBMIT */
-input[type="submit"] /* COMPLETE */ {
+input[type="submit"] {
     background-color: #6b5e4d; 
     color: #fff; 
     padding: 8px 15px;
@@ -172,6 +172,6 @@ input[type="submit"] /* COMPLETE */ {
     cursor: pointer;
 }
 
-input[type="submit"]:hover /* COMPLETE */ {
+input[type="submit"]:hover {
     background-color: #9d5e12; 
 }
