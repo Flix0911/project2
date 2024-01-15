@@ -5,36 +5,28 @@
 <body>
     <%- include("../partials/nav.ejs") %>
 
-    <h1>Details on "<%= media.album.name %>" By: "<%= media.artist %>"</h1>
-    <ul>
-        <ul>
-            <li><img src="<%= media.album.img %>"></li>
-            <li>Title:<%= media.album.name %></li>
-            <li>Released: <%= media.album.releaseDate %></li>
-            <li>Record Label: <%= media.album.recordLabel %></li>
-            <li>Genre: <%= media.album.genre %></li>
-            <li>Duration(Minutes): <%= media.album.duration %></li>
-            <li>Your Rating (1-5): <%= media.album.rating %></li>
-            <li>Language: <%= media.album.language %></li>
-            <li>Country of Origin: <%= media.countryOrigin %></li>
+    <h1 class="show">Album: "<%= media.album.name %>"<br> 
+        By: "<%= media.artist %>"<br></h1>
 
-            <li>Owned: <%= media.album.owned ? "Up on the Shelves" : "On the wanted list" %></li>
-            <ul>
-                <li>Medium: N/A
-                    <% if (media.album.medium.cd) { %>
-                        <span>CD</span>
-                    <% } %>
-                    <% if (media.album.medium.vinyl) { %>
-                        <span>Vinyl</span>
-                    <% } %>
-                    <% if (media.album.medium.cassette) { %>
-                        <span>Cassette</span>
-                    <% } %>
-                </li>
-            </ul>
+        <div class="about-album">
+            
 
-        </ul>
-    </ul>
+                <img src="<%= media.album.img %>" class="show-album-image" id="albumImage">
+
+            
+
+                <ul class="show-album-information">
+                    <li>Released: <%= media.album.releaseDate %></li>
+                    <li>Record Label: <%= media.album.recordLabel %></li>
+                    <li>Genre: <%= media.album.genre %></li>
+                    <li>Duration: <%= media.album.duration %> minutes</li>
+                    <li>Your Rating (1-5): <%= media.album.rating %></li>
+                    <li>Language: <%= media.album.language %></li>
+                    <li>Country of Origin: <%= media.countryOrigin %></li>
+
+                    <li>Status: <%= media.album.owned ? "Up on the Shelves" : "On the wanted list" %></li>
+                </ul>
+        </div>
     
     <a href="/wanted/edit/<%= media._id %>">Update your collection</a>
     <form action="/wanted/<%= media._id %>?_method=DELETE" method="POST">

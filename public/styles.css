@@ -1,3 +1,177 @@
-h1 {
-    color: purple;
+/* Show Pages */
+.show {
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid black;
+    font-size: 70px;
+    margin: auto;
+    padding: 15px;
+    min-width: 700px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.show-album-image {
+    width: 800px;
+    height: 700px;
+    border-radius: 8px;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.show-album-information {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    column-gap: 40px;
+
+}
+
+.show-album-information li {
+    margin-bottom: 25px;
+}
+
+/* Edit Pages */
+.edit {
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid black;
+    font-size: 70px;
+    margin: auto;
+    padding: 15px;
+    min-width: 700px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-instructions {
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.edit-cta-container {
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#ownership {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.medium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.medium-checkbox {
+    margin-right: 100px;
+    padding: 20px;
+
+}
+
+/* CHECKBOXES */
+input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 0px; /* The real checkbox is behind */
+    height: 0px; /* The real checkbox is behind */
+  }
+  
+  input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 4px solid #FFD700;
+    border-radius: 20px;
+    background-color: #663300;  
+    transition: all 0.2s linear;
+  }
+  
+  
+  input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 4px solid #FFD700;
+    border-radius: 50%;
+    background-color: #663300;
+  }
+  
+  
+  input[type=checkbox]:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: solid #FFCB9A;
+    border-width: 0 0px 0px 0;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    transition: all 0.2s linear;
+  }
+  
+  input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 21px;
+    border: solid #FFCB9A;
+    border-width: 0 5px 5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 14px;
+  }
+
+/* INPUT SUBMIT */
+input[type="submit"] /* COMPLETE */ {
+    background-color: #6b5e4d; 
+    color: #fff; 
+    padding: 8px 15px;
+    border: 4px solid rgb(3, 112, 3);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover /* COMPLETE */ {
+    background-color: #9d5e12; 
 }

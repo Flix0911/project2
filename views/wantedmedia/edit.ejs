@@ -5,24 +5,26 @@
 <body>
     <%- include("../partials/nav.ejs") %>
 
-    <h1>Edit page for... "<%= media.artist %> - <%= media.album.name %>" </h1>
-    <h2>This is currently under your Wanted Collection. Has anything changed?</h2>
+    <h1 class="edit">Edit page for...<br> Artist:"<%= media.artist %>" <br>-<br> Album:"<%= media.album.name %>"</h1>
+    <h2 class="edit-h2">This is currently under your Wanted Collection. Has anything changed?</h2>
 
-    <h3>Instructions...</3>
-    <ul>Note: Checkbox means - "Yes, I own it" <span>&#10003;</span></ul>
+    <p class="edit-instructions">Note: Checkbox means - "Yes, I own it" <span>&#10003;</span></p>
 
+    <form action="/wanted/<%= media._id %>?_method=PUT" method="POST" class="edit-cta-container">
 
-    <form action="/owned/<%= media._id %>/?_method=PUT" method="post">
+        <p class="edit-cta-container" id="ownership">Do you own this Album?: <input type="checkbox" name="media.album.owned" <%= media.album.owned ? 'checked': '' %>></p><br>
 
-        Owned(Click box for yes): <input type="checkbox" name="media.album.owned" <%= media.album.owned ? 'checked': '' %>><br>
-       
-        CD(Click box for yes): <input type="checkbox" name="media.album.medium.cd" <%= media.album.medium.cd ? 'checked': '' %>><br>
+        <p class="medium-confirmation">Medium owned:</p>
+
+        <div class="medium">
+            <p class="medium-checkbox">CD:<input type="checkbox" name="media.album.medium.cd" <%= media.album.medium.cd ? 'checked': '' %>></p>
+            <p class="medium-checkbox">Vinyl:<input type="checkbox" name="media.album.medium.vinyl" <%= media.album.medium.vinyl ? 'checked': '' %>></p>
+            <p class="medium-checkbox">Cassette:<input type="checkbox" name="media.album.medium.cassette" <%= media.album.medium.cassette ? 'checked': '' %>></p>
+        </div>
         
-        Vinyl(Click box for yes): <input type="checkbox" name="media.album.medium.vinyl" <%= media.album.medium.vinyl ? 'checked': '' %>><br>
-        
-        Cassette(Click box for yes): <input type="checkbox" name="media.album.medium.cassette" <%= media.album.medium.cassette ? 'checked': '' %>><br>
-    
         <input type="submit" value="Update your Collection">
     </form>
+    
+    
 </body>
 </html>
