@@ -4,28 +4,28 @@
 
 <body>
 
-    <h1>This is the index page for Wanted Media</h1>
+    <h1 class="index">This is the index page for Wanted Media</h1>
 
-    <div>
+    <div class="navigation">
         <% const randomIndex = Math.floor(Math.random() * medias.length); %>
         <a href="/wanted/<%= medias[randomIndex]._id %>">Random Wanted Album</a>
         <a href="/owned/new">Add a newly acquired album</a>
         <a href="/wanted/new">Add a wanted album</a>
         <a href="/owned">Go to Owned Albums</a>
-        <a href="/home">Return Home</a>
+        <a href="/">Return Home</a>
     </div>
 
-    <ul>
-        <% for(let i = 0; i < medias.length; i++) { %>
-            <li>
-                <a href="/wanted/<%= medias[i]._id %>">
-                    <img src="<%= medias[i].album.img %>" alt=
-                    "<%= medias[i].artist %> - <%= medias[i].album.name %>">
-                </a>
-            </li>
-        <% } %>
-    </ul>
-
+        <div class="album-container">
+            <% for(let i = 0; i < medias.length; i++) { %>
+                <li>
+                    <a href="/wanted/<%= medias[i]._id %>"
+                        class="index-album-image">
+                        <img src="<%= medias[i].album.img %>" alt=
+                        "<%= medias[i].artist %> - <%= medias[i].album.name %>">
+                    </a>
+                </li>
+            <% } %>
+        </div>
 
 </body>
 </html>

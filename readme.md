@@ -154,3 +154,10 @@ const musicSchema = new Schema({
 - On that note though, no color or color palette has been added to anything yet, minus checkboxes, which I doubt is permanent. Once the layout of all the pages are correct, that's when I'll come in and start adding colors to it all. I'm not really sure what it should be though, black, white, red, gold, silver, that seems to be my initial thoughts. Black and silver are common for vinyl and CDs, red seems to be a common color of tracklists on records, black is the norm for cassettes (though they do color them). Gold just seems appropriate for some reason. That is not today's task though
 - Tried making a hamburger toggle and it went horribly. I think my index page will be changed to the below, noted updated index
 ![Desktop Index UPDATE](https://i.imgur.com/497u4st.jpg)
+
+| 1/16 - Below tasks accomplished |
+- More styling!
+- Index of both owned and wanted media have been set up. I'm more or less happy with the layout of this, I think the albums came together nicely. My nitpicky complaints, the sides look ugly, especially with the navigation bar extending beyond. I'm not sure how I feel about that, but shortening the navigation bar would look wrong. I almost want color on the side to make the albums pop. However, you'll have clashing colors
+- Colors on the page are not my ideal. That is something that needs to be worked on, and will be in the touch up phase
+- Some odds in ends of links not working or sending you to incorrect pages were taken care of
+- Tomorrow will be finishing up new.ejs page. From there, I can work on color scheme of the whole application. That'll be a journey in and of its self

@@ -1,6 +1,6 @@
 body {
-    background-color: #f3ede9; /* Light beige background */
-    color: #3c3c3c; /* Dark gray text color */
+    background-color: #f3ede9; 
+    color: #3c3c3c; 
 }
 
 /* Show Pages */
@@ -250,7 +250,7 @@ li {
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    border: 5px solid #402e2e;
+    border: 5px solid #3c3c3c;
 }
 
 .index-album-image img:hover {
