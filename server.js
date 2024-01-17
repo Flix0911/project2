@@ -38,7 +38,7 @@ app.use("/wanted", wantedMediaRouter);
 // ----
 //Routes
 // ----
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
     res.render("landing/landing.ejs")
 })
 

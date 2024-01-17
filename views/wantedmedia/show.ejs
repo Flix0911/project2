@@ -3,10 +3,18 @@
     <%- include("../partials/head.ejs") %>
 
 <body>
-    <%- include("../partials/nav.ejs") %>
 
     <h1 class="show">Album: "<%= media.album.name %>"<br> 
         By: "<%= media.artist %>"<br></h1>
+
+        <div class="navigation">
+            <a href="/wanted/edit/<%= media._id %>">Update <%= media.album.name %></a>
+            <a href="/owned">Your Owned Albums</a>
+            <a href="/owned/new">Make a New Owned Album</a>
+            <a href="/wanted">Your Wanted Albums</a>
+            <a href="/wanted/new">Make a New Wanted Album</a>
+            <a href="/">Home</a>
+        </div>
 
         <div class="about-album">
             
@@ -28,11 +36,9 @@
                 </ul>
         </div>
     
-    <a href="/wanted/edit/<%= media._id %>">Update your collection</a>
     <form action="/wanted/<%= media._id %>?_method=DELETE" method="POST">
         <button>DELETE</button>
     
-    <%- include("../partials/footer.ejs") %>
 
 </body>
 </html>
