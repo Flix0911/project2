@@ -332,5 +332,55 @@ li {
         display: flex;
         margin: auto;
         font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .show-album-information {
+        justify-content: center;
+        font-size: 15px;
+        align-items: center;
+
+        flex-direction: column;
+        column-gap: 10px;
+    }
+
+    .edit {
+        font-size: 30px;
+    }
+
+    .edit-cta-container /* This didn't do anything, come back to */ {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .index {
+        font-size: 25x;
+        padding: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .album-container {
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+        gap: 5px;
+    }
+
+    .index-album-image img {
+        height: auto;
+        text-align: center;
+    }
+
+    .welcome {
+        font-size: 25px;
+    }
+
+    .welcome-instructions {
+        flex-direction: column;
     }
 }
