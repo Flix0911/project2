@@ -32,6 +32,7 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use("/public", express.static("public"));
+app.use("/images", express.static("images"));
 app.use("/owned", ownedMediaRouter);
 app.use("/wanted", wantedMediaRouter);
 

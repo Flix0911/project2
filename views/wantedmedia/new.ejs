@@ -3,11 +3,18 @@
     <%- include("../partials/head.ejs") %>
 
 <body>
-    <%- include("../partials/nav.ejs") %>
 
-    <h1>Add to your Wanted Collection</h1>
+    <h1 class="new">Add to your Wanted Collection</h1>
 
-    <form action="/wanted" method="post">
+    <div class="navigation">
+        
+        <a href="/owned">Owned Albums</a>
+        <a href="/wanted">Wanted Albums</a>
+        <a href="/">Return to base camp</a>
+       
+    </div>
+
+    <form action="/wanted" method="post" class="edit-cta-container">
         Artist: <input type="text" name="artist"><br>
         Album Title: <input type="text" name="album[name]"><br>
         Album's Image: <input type="text" name="album.img"><br>

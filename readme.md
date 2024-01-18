@@ -158,6 +158,11 @@ const musicSchema = new Schema({
 | 1/16 - Below tasks accomplished |
 - More styling!
 - Index of both owned and wanted media have been set up. I'm more or less happy with the layout of this, I think the albums came together nicely. My nitpicky complaints, the sides look ugly, especially with the navigation bar extending beyond. I'm not sure how I feel about that, but shortening the navigation bar would look wrong. I almost want color on the side to make the albums pop. However, you'll have clashing colors
-- Colors on the page are not my ideal. That is something that needs to be worked on, and will be in the touch up phase
+- Colors on the page are not my ideal. That is something that needs to be worked on, and will be in the touch up phase. I think the grayish/brown as the body background is nice. The navigation buttons are not though. Same goes with font, but again, touch ups, not the big picture stuff
 - Some odds in ends of links not working or sending you to incorrect pages were taken care of
 - Tomorrow will be finishing up new.ejs page. From there, I can work on color scheme of the whole application. That'll be a journey in and of its self
+| 1/17 Below tasks accomplished |
+- More Styling!
+- All pages are now styled and layout-wise, look pretty good. They look a little flat at time but I'm more or less happy with the styling. There are a couple of things that should be noted at this point. 1. I've tried to stay consistent throughout all the pages now. I previously did not have that and there were stylistic changes, that is now no more, for the most part everything looks similar. 2. I've reduced my voice in the pages - meaning: Like these notes, I tend to write more than what is needed. That was cut down and I think I can cut down more. This includes the welcome page, instructions on edit page, and what the links say in their text box. 3. With that, it makes everything look a lot more simple, which it already was, but even more simplification 
+- I have created a new problem for myself and that is my nav.ejs is now a waste of space, it is on no page. This also includes my footer.ejs, it is now completely gone from my pages. I changed layouts throughout this and they didn't feel right. I need to create a few different navigation bars at this point, but is that redundent/DRY. 
+- My buttons for "delete" and "update your collection" look horrible. They have a hover effect. Regarding the Edit page, I'm somewhat unhappy with it. It is extremely dull

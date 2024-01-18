@@ -63,22 +63,6 @@ body {
     justify-content: center;
 }
 
-.edit-h2 {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.edit-instructions {
-    display: flex;
-    justify-content: center;
-    width: 1500px;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 30px;
-}
-
 .edit-cta-container {
     text-align: center;
     font-size: 40px;
@@ -97,13 +81,18 @@ body {
 .medium {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    max-height: 30px;
 }
 
 .medium-checkbox {
     margin-right: 100px;
     padding: 20px;
 
+}
+
+.medium-confirmation {
+    text-decoration: underline;
 }
 
 /* CHECKBOXES */
@@ -206,12 +195,12 @@ input[type="submit"]:hover {
 
 .navigation a {
     font-size: 20px;
-    border: 3px solid rgb(152, 155, 117);
+    border: 1px solid rgb(152, 155, 117);
     text-align: center;
     padding: 10px;
     flex: 2;
     background-color: gray;
-    border-radius: 10px;
+    border-radius: 1px;
     text-decoration: none;
     background-color: #9d5e12; /* Dark orange for navigation links */
     color: #fff;
@@ -255,4 +244,56 @@ li {
 
 .index-album-image img:hover {
     transform: scale(1.5);
+}
+/* NEW PAGE */
+.new {
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid black;
+    font-size: 70px;
+    margin: auto;
+    padding: 15px;
+    min-width: 700px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LANDING */
+
+.welcome {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    margin: auto;
+    padding: 15px;
+    min-width: 700px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-instructions {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid orange;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.navigation a {
+    font-size: 20px;
+    border: 1px solid rgb(152, 155, 117);
+    text-align: center;
+    padding: 10px;
+    flex: 2;
+    background-color: gray;
+    border-radius: 1px;
+    text-decoration: none;
+    background-color: #9d5e12; /* Dark orange for navigation links */
+    color: #fff;
 }

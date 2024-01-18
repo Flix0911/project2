@@ -6,9 +6,15 @@
     <%- include("../partials/nav.ejs") %>
 
     <h1 class="edit">Edit page for...<br> Artist:"<%= media.artist %>" <br>-<br> Album:"<%= media.album.name %>"</h1>
-    <h2 class="edit-h2">This is currently under your Wanted Collection. Has anything changed?</h2>
 
-    <p class="edit-instructions">Note: Checkbox means - "Yes, I own it" <span>&#10003;</span></p>
+    <div class="navigation">
+
+        <a href="/owned">Owned Albums</a>
+        <a href="/wanted">Wanted Albums</a>
+        <a href="/">Home</a>
+       
+    </div>
+
 
     <form action="/wanted/<%= media._id %>?_method=PUT" method="POST" class="edit-cta-container">
 

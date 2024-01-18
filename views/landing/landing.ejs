@@ -2,17 +2,21 @@
 <html lang="en">
     <%- include("../partials/head.ejs") %>
 <body>
-    <h1>Welcome to your online Media cabinet!</h1>
+    <h1 class="welcome">Your Digital Media Cabinet</h1>
 
-        <div>
-            <a href="/owned"><button>Owned Collection</button></a>
-            <a href="/wanted"><button>Wanted Collection</button></a>
+        <div class="navigation">
+            <a href="/owned">Owned Collection</a>
+            <a href="/owned/new">Make a New Owned Album</a>
+            <a href="/wanted">Wanted Collection</a>
+            <a href="/wanted/new">Make a New Wanted Album</a>
         </div>
-<div>
-<h3>1. This is a place to store your both albums you own and albums on your wanted list.</h3>
-<h3>2. By clicking into either "Owned Collection" or "Wanted Collection", it will show you details of your current collection. You may browse further in by clicking the album's image</h3>
-<h3>3. You may edit your Owned or Wanted media within the display page. Please note, "<span>&#10003;</span>", means "Yes, I have 'X'". Happy collecting!</h3>
+<div class="welcome-instructions">
+<h3>1. Use this space to organize both the albums you already own and the ones you want to acquire.</h3>
+<hr>
+<h3>2. Navigate into either "Owned Collection" or "Wanted Collection" to view details of your respective collections. Click on the album's image for more information.</h3>
+<hr>
+<h3>3. Edit your Owned or Wanted media on the display page. Note: "<span>&#10003;</span>", indicates "Yes, I have this". Enjoy your collecting experience!</h3>
 </div>
-        <%- include("../partials/footer.ejs") %>
+        
 </body>
 </html>

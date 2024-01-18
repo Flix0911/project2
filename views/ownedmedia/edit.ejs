@@ -3,12 +3,18 @@
     <%- include("../partials/head.ejs") %>
 
 <body>
-    <%- include("../partials/nav.ejs") %>
 
-    <h1 class="edit">Edit page for...<br> Artist:"<%= media.artist %>" <br>-<br> Album:"<%= media.album.name %>"</h1>
-    <h2 class="edit-h2">This is currently under your Owned Collection. Has anything changed?</h2>
+    <h1 class="edit">Edit page for...<br> Artist:"<%= media.artist %>" <br>-<br> Album: "<%= media.album.name %>"</h1>
+    
+    <div class="navigation">
 
-    <p class="edit-instructions">Note: Checkbox means - "Yes, I own it" <span>&#10003;</span></p>
+        <a href="/owned">Owned Albums</a>
+        <a href="/wanted">Wanted Albums</a>
+        <a href="/">Home</a>
+       
+    </div>
+
+
 
     <form action="/owned/<%= media._id %>?_method=PUT" method="POST" class="edit-cta-container">
 
