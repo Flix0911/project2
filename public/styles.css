@@ -251,7 +251,8 @@ li {
 }
 
 .delete-button,
-.cta-submit {
+.cta-submit,
+.submit-cta {
     display: block;
     margin: auto;
     padding: 10px 30px; 
