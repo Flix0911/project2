@@ -5,10 +5,14 @@ body {
 }
 
 /* Show Pages */
-.show {
+.show,
+.index,
+.edit,
+.new,
+.welcome {
     text-align: center;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
     margin: auto;
     padding: 15px;
     min-width: 700px;
@@ -26,12 +30,7 @@ body {
     font-style: italic;
 }
 
-.medium {
-    font-weight: bold;
-    font-size: 30px;
-    color: #585481;
-    font-style: italic;
-}
+
 
 .about-album {
     display: flex;
@@ -67,19 +66,6 @@ body {
 }
 
 /* Edit Pages */
-.edit {
-    text-align: center;
-    font-weight: bold;
-    font-size: 70px;
-    margin: auto;
-    padding: 15px;
-    min-width: 700px;
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-}
 
 .edit-cta-container {
     text-align: center;
@@ -101,6 +87,12 @@ body {
     align-items: center;
     justify-content: space-between;
     max-height: 30px;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #585481;
+    font-style: italic;
 }
 
 .medium-checkbox {
@@ -119,6 +111,7 @@ input[type=checkbox] {
     cursor: pointer;
     width: 0px; 
     height: 0px; 
+    margin: -2px;
   }
   
   input[type=checkbox]:checked:before {
@@ -175,20 +168,6 @@ input[type=checkbox] {
   }
 
 /* INDEX */
-.index {
-    text-align: center;
-    font-weight: bold;
-    font-size: 70px;
-    margin: auto;
-    padding: 15px;
-    min-width: 700px;
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-}
-
 .navigation {
     display: flex;
     justify-content: space-around;
@@ -247,37 +226,8 @@ li {
 .index-album-image img:hover {
     transform: scale(1.5);
 }
-/* NEW PAGE */
-.new {
-    text-align: center;
-    font-weight: bold;
-    font-size: 70px;
-    margin: auto;
-    padding: 15px;
-    min-width: 700px;
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-}
 
 /* LANDING */
-
-.welcome {
-    text-align: center;
-    font-weight: bold;
-    font-size: 70px;
-    margin: auto;
-    padding: 15px;
-    min-width: 700px;
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-}
-
 .welcome-instructions {
     display: flex;
     justify-content: space-around;
@@ -313,7 +263,8 @@ li {
     border-radius: 5px; 
 }
 
-.delete-button:hover {
+.delete-button:hover,
+.cta-submit:hover {
     background-color: #560202; 
 }
 
@@ -325,13 +276,15 @@ li {
     .welcome {
         text-align: center;
         font-weight: bold;
-        font-size: 20px;
         max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 10px auto;
-        
+        min-width: 50px;
+        max-width: 100px;
+        font-size: 30px;
+        padding: auto;
+        margin: auto;
     }
 
 
@@ -363,20 +316,26 @@ li {
     }
 
     .medium {
-        justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: auto;
         display: flex;
-        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+        max-height: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .medium-confirmation {
+        display: flex;
+        flex-direction: column;
     }
 
     .medium-checkbox {
-        margin-right: 0;
-        padding: 5px;
+        margin: 5px;
     }
 
-
+    .edit-cta-container {
+        text-align: center;
+    }
 
     .navigation {
         display: flex;
@@ -393,8 +352,6 @@ li {
         text-align: center;
     }
 
-
-
     .welcome-instructions {
         flex-direction: column;
     }
@@ -403,5 +360,11 @@ li {
     .cta-submit {
         display: flex;
         flex-direction: column;
+        margin: -30px;
+    }
+    input[type=checkbox] {
+        width: 0px;
+        height: 0px;
+        margin: 10px auto;
     }
 }
