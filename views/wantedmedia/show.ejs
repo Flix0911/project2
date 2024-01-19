@@ -32,12 +32,12 @@
                     <li>Language: <%= media.album.language %></li>
                     <li>Country of Origin: <%= media.countryOrigin %></li>
 
-                    <li>Status: <%= media.album.owned ? "Up on the Shelves" : "On the wanted list" %></li>
+                    <li class="status">Status: <%= media.album.owned ? "Up on the Shelves" : "On the wanted list" %></li>
                 </ul>
         </div>
     
     <form action="/wanted/<%= media._id %>?_method=DELETE" method="POST">
-        <button>DELETE</button>
+        <button class="delete-button">DELETE</button>
     
 
 </body>

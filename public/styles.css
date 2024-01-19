@@ -1,13 +1,13 @@
 body {
     background-color: #f3ede9; 
     color: #3c3c3c; 
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Show Pages */
 .show {
     text-align: center;
     font-weight: bold;
-    border: 5px solid black;
     font-size: 70px;
     margin: auto;
     padding: 15px;
@@ -16,6 +16,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-style: italic;
+}
+
+.status {
+    font-weight: bold;
+    font-size: 35px;
+    color: #118519;
+    font-style: italic;
+}
+
+.medium {
+    font-weight: bold;
+    font-size: 30px;
+    color: #585481;
+    font-style: italic;
 }
 
 .about-album {
@@ -31,6 +46,7 @@ body {
     display: flex;
     padding: 10px;
     margin: 10px;
+    border-style: groove;
 }
 
 .show-album-information {
@@ -41,6 +57,8 @@ body {
     flex-direction: column;
     font-size: 25px;
     column-gap: 40px;
+    background-color: #e9f3ed;
+    border-style: double;
 
 }
 
@@ -52,7 +70,6 @@ body {
 .edit {
     text-align: center;
     font-weight: bold;
-    border: 5px solid black;
     font-size: 70px;
     margin: auto;
     padding: 15px;
@@ -61,6 +78,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-style: italic;
 }
 
 .edit-cta-container {
@@ -99,8 +117,8 @@ body {
 input[type=checkbox] {
     position: absolute;
     cursor: pointer;
-    width: 0px; /* The real checkbox is behind */
-    height: 0px; /* The real checkbox is behind */
+    width: 0px; 
+    height: 0px; 
   }
   
   input[type=checkbox]:checked:before {
@@ -156,20 +174,6 @@ input[type=checkbox] {
     left: 14px;
   }
 
-/* INPUT SUBMIT */
-input[type="submit"] {
-    background-color: #6b5e4d; 
-    color: #fff; 
-    padding: 8px 15px;
-    border: 4px solid rgb(3, 112, 3);
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #9d5e12; 
-}
-
 /* INDEX */
 .index {
     text-align: center;
@@ -182,15 +186,13 @@ input[type="submit"]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid #704f2b; /* Dark orange border for index */
-    background-color: #e0d8cd; /* Light brown background for index */
-    color: #704f2b;
+    font-style: italic;
 }
 
 .navigation {
     display: flex;
     justify-content: space-around;
-    background-color: #6b5e4d;
+    background-color: #65B891;
 }
 
 .navigation a {
@@ -202,12 +204,12 @@ input[type="submit"]:hover {
     background-color: gray;
     border-radius: 1px;
     text-decoration: none;
-    background-color: #9d5e12; /* Dark orange for navigation links */
+    background-color: #A76D60;
     color: #fff;
 }
 
 .navigation a:hover {
-    background-color: #704f2b; /* Slightly darker orange on hover */
+    background-color: #65B891; 
 }
 
 .album-container {
@@ -249,7 +251,6 @@ li {
 .new {
     text-align: center;
     font-weight: bold;
-    border: 5px solid black;
     font-size: 70px;
     margin: auto;
     padding: 15px;
@@ -258,6 +259,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-style: italic;
 }
 
 /* LANDING */
@@ -273,12 +275,12 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-style: italic;
 }
 
 .welcome-instructions {
     display: flex;
     justify-content: space-around;
-    border: 3px solid orange;
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -294,11 +296,28 @@ li {
     background-color: gray;
     border-radius: 1px;
     text-decoration: none;
-    background-color: #9d5e12; /* Dark orange for navigation links */
+    background-color: #9d5e12; 
     color: #fff;
 }
 
-@media screen {
+.delete-button,
+.cta-submit {
+    display: block;
+    margin: auto;
+    padding: 10px 30px; 
+    font-size: 16px; 
+    background-color: #ff0000; 
+    color: #fff; 
+    border: 5px solid black;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.delete-button:hover {
+    background-color: #560202; 
+}
+
+@media only screen and (max-width: 400px) {
 
     .show,
     .edit,
@@ -306,20 +325,15 @@ li {
     .welcome {
         text-align: center;
         font-weight: bold;
-        border: 5px solid black;
-        font-size: 40px;
-        margin: auto;
-        padding: 8px;
-        max-width: 80%;
-        max-width: 70%;
+        font-size: 20px;
+        max-width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 10px auto;
+        
     }
 
-    .show {
-        font-size: 20px;
-    }
 
     .about-album {
         display: flex;
@@ -342,24 +356,27 @@ li {
         justify-content: center;
         font-size: 15px;
         align-items: center;
-
+        margin: auto;
+        padding: 10px;
         flex-direction: column;
         column-gap: 10px;
     }
 
-    .edit {
-        font-size: 30px;
-    }
-
-    .edit-cta-container /* This didn't do anything, come back to */ {
+    .medium {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin: auto;
-        padding: 20px;
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
     }
 
-    .index {
-        font-size: 25x;
-        padding: 10px;
+    .medium-checkbox {
+        margin-right: 0;
+        padding: 5px;
     }
+
+
 
     .navigation {
         display: flex;
@@ -376,11 +393,15 @@ li {
         text-align: center;
     }
 
-    .welcome {
-        font-size: 25px;
-    }
+
 
     .welcome-instructions {
+        flex-direction: column;
+    }
+
+
+    .cta-submit {
+        display: flex;
         flex-direction: column;
     }
 }

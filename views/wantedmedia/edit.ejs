@@ -3,7 +3,6 @@
     <%- include("../partials/head.ejs") %>
 
 <body>
-    <%- include("../partials/nav.ejs") %>
 
     <h1 class="edit">Edit page for...<br> Artist:"<%= media.artist %>" <br>-<br> Album:"<%= media.album.name %>"</h1>
 
@@ -28,7 +27,7 @@
             <p class="medium-checkbox">Cassette:<input type="checkbox" name="media.album.medium.cassette" <%= media.album.medium.cassette ? 'checked': '' %>></p>
         </div>
         
-        <input type="submit" value="Update your Collection">
+        <input type="submit" value="Update your Collection" class="cta-submit">
     </form>
     
     

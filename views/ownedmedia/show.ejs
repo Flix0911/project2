@@ -34,17 +34,17 @@
                     <li>Language: <%= media.album.language %></li>
                     <li>Country of Origin: <%= media.countryOrigin %></li>
 
-                    <li>Status: <%= media.album.owned ? "Up on the Shelves" : "On the wanted list" %></li>
+                    <li class="status">Status: <%= media.album.owned ? "Up on the Shelves" : "On the wanted list" %></li>
                     <ul class="show-medium-owned">
-                        <li>Medium:
+                        <li class="medium">Medium:
                             <% if (media.album.medium.cd) { %>
-                            <span>CD</span>
+                            <span> CD </span>
                             <% } %>
                             <% if (media.album.medium.vinyl) { %>
-                            <span>Vinyl</span>
+                            <span> Vinyl </span>
                             <% } %>
                             <% if (media.album.medium.cassette) { %>
-                            <span>Cassette</span>
+                            <span> Cassette </span>
                             <% } %>
                         </li>
                     </ul>
@@ -52,7 +52,7 @@
         </div>
 
         <form action="/owned/<%= media._id %>?_method=DELETE" method="POST">
-            <button>DELETE</button>
+            <button class="delete-button">DELETE</button>
 
 
 </body>
