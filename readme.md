@@ -11,12 +11,10 @@
 
 #### Node Dependencies (package.json)
 
-- bcrypt (TBD)
 - connect-mongo
 - dotenv
 - ejs
 - express
-- express-session (TBD)
 - method-override
 - mongoose
 - morgan
@@ -24,7 +22,6 @@
 
 #### Frontend (if used, ex. jQuery, AlpineJS, Bootstrap, HTMX, etc.)
 
-- N/A currently
 
 ## Route Map
 
